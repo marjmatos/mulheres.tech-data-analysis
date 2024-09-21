@@ -1,0 +1,18 @@
+
+print("")
+print("qual é a sua idade?")
+idade = int(input())
+
+if idade >= 18:
+    print("ACESSO LIBERADO!")
+    
+elif idade >= 16:
+    print("o filme selecionado é para maiores de 18 anos\nPARA ACESSAR PRECISA DE RESPONSÁVEL")
+    responsavel = input().upper()
+    if responsavel == "SIM":
+        print("ACESSO LIBERADO!")
+    else:
+        print("você só pode assistir ao filme acompanhado de um responsável")
+
+else: 
+    print("ACESSO NEGADO")
